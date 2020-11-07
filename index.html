@@ -10,16 +10,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
-    <style>
-        .carousel-item img {
-            width: auto;
-            height: 600px;
-            max-height: 600px;
-            margin: auto;
-            display: block;
-        }
+    <title>Travelling Bites</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 
+    <style>
+        .site-header{
+            background-color: black;
+            backdrop-filter: saturate(180%) blur(20px);
+            
+        }
+        .imga{
+            background-image: url("1.jpg");
+        }
         mark {
             background-color: yellow;
             color: black;
@@ -27,102 +30,42 @@
     </style>
 </head>
 
-<body style="background-color: #4ba2ae;">
-    <!-- <div class="fixed-top"> -->
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-            <h5 class="text-white h4">Collapsed content</h5>
-            <span class="text-muted">Toggleable via the navbar brand.</span>
-        </div>
-    </div>
-    <nav class="navbar navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </nav>
-    </div>
-    <nav class="navbar navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Travelling Bites</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        options
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">about</a>
-                        <a class="dropdown-item" href="#">contact us</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">history</a>
-                    </div>
-                </li>
-
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+<body>
+    <nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2" href="#" aria-label="Product">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img"
+                    viewBox="0 0 24 24" focusable="false">
+                    <title>Product</title>
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path
+                        d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94">
+                    </path>
+                </svg>
+            </a>
+            <a class="py-2 d-none d-md-inline-block" href="/login" style="color:white">Login</a>
+            <a class="py-2 d-none d-md-inline-block" href="/register" style="color:white">Register</a>
+            <a class="py-2 d-none d-md-inline-block" href="#" style="color:white">Features</a>
+            <a class="py-2 d-none d-md-inline-block" href="#" style="color:white">Enterprise</a>
+            <a class="py-2 d-none d-md-inline-block" href="#" style="color:white">Support</a>
+            <a class="py-2 d-none d-md-inline-block" href="#" style="color:white">Offers</a>
+            <a class="py-2 d-none d-md-inline-block" href="#" style="color:white">Feedback</a>
         </div>
     </nav>
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="1.jpg" width="1700px" height="800px" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h4 style="color: rgb(252, 27, 11); font-size:xx-large;"><mark>Welcome to Travelling Bites</mark></h4>
-                    <!-- <p style="color:rgb(90, 8, 241)" style="font-size:x-large;">Get your your food delivered at your
-                        place!.</p> -->
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="2.jpg" width="1700px" height="800px" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h4 style="color:rgb(252, 27, 11); font-size:xx-large;"><mark>No more starving!</mark></h4>
-                    <!-- <p style="color:red" style="font-size:x-large;">No more starving!.</p> -->
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="3.jpg" width="1700px" height="800px" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h4 style="color: rgb(252, 27, 11); font-size:xx-large;"><mark>Delicious food delivered fast!</mark></h4>
-                    <!-- <p style="color:red" style="font-size:x-large;">hey there Mesratian.</p> -->
-                </div>
-            </div>
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light imga">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <!-- <h1 class="display-4 font-weight-normal"><mark>Travelling Bites</mark></h1>
+            <p class="lead font-weight-normal"><mark>Welcome to our website</mark></p> -->
+            <h1 class="display-4 font-weight-normal" style="color: #00ffc4; font-family: 'Sofia';font-size: 69px;"><strong><u>Travelling Bites</u></strong></h1>
+            <p class="lead font-weight-normal">Welcome to our website</p>
+            <button type="button" class="btn btn-primary">coming soon</button>
+
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <div class="container my-4 mx-100 text-center">
-        <a class="btn btn-primary" href="#" role="button">Link</a>
-        <button class="btn btn-primary" type="submit">Button</button>
-        <input class="btn btn-primary" type="button" value="Input">
-        <input class="btn btn-primary" type="submit" value="Submit">
-        <input class="btn btn-primary" type="reset" value="Reset">
-    </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+      </div>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
